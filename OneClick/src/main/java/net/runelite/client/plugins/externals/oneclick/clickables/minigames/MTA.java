@@ -82,7 +82,7 @@ public class MTA extends Clickable
 		}
 		client.createMenuEntry(client.getMenuOptionCount())
 			.setOption("Cast")
-			.setTarget("<col=00ff00>Lvl-6 Enchant</col><col=ffffff> -> <col=ff9040>" +
+			.setTarget("<col=00ff00>Lvl-5 Enchant</col><col=ffffff> -> <col=ff9040>" +
 				item.getName() +
 				"(" +
 				getItemCount(item.getId()) +
@@ -96,7 +96,7 @@ public class MTA extends Clickable
 			.onClick(e ->
 			{
 				refreshInventory();
-				setSelectSpell(WidgetInfo.SPELL_LVL_6_ENCHANT);
+				setSelectSpell(WidgetInfo.SPELL_LVL_5_ENCHANT);
 			});
 		return true;
 	}
